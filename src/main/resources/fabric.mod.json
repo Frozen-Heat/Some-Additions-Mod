@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "some-additions",
+	"version": "${version}",
+	"name": "Some Additions",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/some-additions/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"name.modid.SomeAdditions"
+		],
+		"client": [
+			"name.modid.SomeAdditionsClient"
+		],
+		"fabric-datagen": [
+			"name.modid.SomeAdditionsDataGenerator"
+		]
+	},
+	"mixins": [
+		"some-additions.mixins.json",
+		{
+			"config": "some-additions.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
