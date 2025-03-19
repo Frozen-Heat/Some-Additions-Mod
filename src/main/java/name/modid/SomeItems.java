@@ -39,6 +39,10 @@ public class SomeItems {
         ItemGroupEvents.modifyEntriesEvent(CUSTOM_ITEM_GROUP_KEY).register(itemGroup -> {
             itemGroup.add(SomeItems.ROSE_DYE);
             itemGroup.add(SomeItems.SPRING_GREEN_DYE);
+            itemGroup.add(SomeBlocks.ROSE_CONCRETE.asItem());
+            itemGroup.add(SomeBlocks.SPRING_GREEN_CONCRETE.asItem());
+            itemGroup.add(SomeBlocks.ROSE_CONCRETE_POWDER.asItem());
+            itemGroup.add(SomeBlocks.SPRING_GREEN_CONCRETE_POWDER.asItem());
         });
 
     }

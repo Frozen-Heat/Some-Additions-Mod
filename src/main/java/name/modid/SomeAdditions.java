@@ -20,5 +20,7 @@ public class SomeAdditions implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello Fabric world!");
+		SomeBlocks.initialize();
+		SomeItems.initialize();
 	}
 }
