@@ -1,9 +1,11 @@
 {
-  "itemGroup.SomeAdditionsTab": "Some Additions Tab",
-  "text.some_additions:rose_concrete": "Rose Concrete",
-  "text.some_additions:rose_concrete_powder": "Rose Concrete Powder",
-  "text.some_additions:rose_dye": "Rose Dye",
-  "text.some_additions:spring_green_concrete": "Spring Green Concrete",
-  "text.some_additions:spring_green_concrete_powder": "Spring Green Concrete Powder",
-  "text.some_additions:spring_green_dye": "Spring Green Dye"
+  "block.some-additions.rose_concrete": "Rose Concrete",
+  "block.some-additions.rose_concrete_powder": "Rose Concrete Powder",
+  "block.some-additions.rose_wool": "Rose Wool",
+  "block.some-additions.spring_green_concrete": "Spring Green Concrete",
+  "block.some-additions.spring_green_concrete_powder": "Spring Green Concrete Powder",
+  "block.some-additions.spring_green_wool": "Spring Green Wool",
+  "item.some-additions.rose_dye": "Rose Dye",
+  "item.some-additions.spring_green_dye": "Spring Green Dye",
+  "itemGroup.SomeAdditionsTab": "Some Additions Tab"
 }

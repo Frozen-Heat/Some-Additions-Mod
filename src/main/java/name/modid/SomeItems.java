@@ -2,9 +2,6 @@ package name.modid;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.fabricmc.fabric.api.registry.FuelRegistry;
-import net.minecraft.component.type.FoodComponent;
-import net.minecraft.util.DyeColor;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -22,8 +19,8 @@ public class SomeItems {
         // Return the registered item!
         return Registry.register(Registries.ITEM, itemID, item);
     }
-    public static final Item ROSE_DYE = register(new DyeItem(DyeColor.WHITE, new Item.Settings()), "rose_dye");
-    public static final Item SPRING_GREEN_DYE = register(new DyeItem(DyeColor.WHITE, new Item.Settings()), "spring_green_dye");
+    public static final Item ROSE_DYE = register(new DyeItem(NewDyeColors.ROSE.get(), new Item.Settings()), "rose_dye");
+    public static final Item SPRING_GREEN_DYE = register(new DyeItem(NewDyeColors.SPRING_GREEN.get(), new Item.Settings()), "spring_green_dye");
 
     public static final RegistryKey<ItemGroup> CUSTOM_ITEM_GROUP_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(SomeAdditions.MOD_ID, "item_group"));
     public static final ItemGroup CUSTOM_ITEM_GROUP = FabricItemGroup.builder()
@@ -39,6 +36,8 @@ public class SomeItems {
         ItemGroupEvents.modifyEntriesEvent(CUSTOM_ITEM_GROUP_KEY).register(itemGroup -> {
             itemGroup.add(SomeItems.ROSE_DYE);
             itemGroup.add(SomeItems.SPRING_GREEN_DYE);
+            itemGroup.add(SomeBlocks.ROSE_WOOL.asItem());
+            itemGroup.add(SomeBlocks.SPRING_GREEN_WOOL.asItem());
             itemGroup.add(SomeBlocks.ROSE_CONCRETE.asItem());
             itemGroup.add(SomeBlocks.SPRING_GREEN_CONCRETE.asItem());
             itemGroup.add(SomeBlocks.ROSE_CONCRETE_POWDER.asItem());

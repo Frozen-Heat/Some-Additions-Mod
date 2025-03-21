@@ -22,6 +22,8 @@ public class SomeAdditionsModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(ROSE_CONCRETE);
         blockStateModelGenerator.registerSimpleCubeAll(SPRING_GREEN_CONCRETE);
+        blockStateModelGenerator.registerSimpleCubeAll(ROSE_WOOL);
+        blockStateModelGenerator.registerSimpleCubeAll(SPRING_GREEN_WOOL);
         blockStateModelGenerator.registerSimpleCubeAll(ROSE_CONCRETE_POWDER);
         blockStateModelGenerator.registerSimpleCubeAll(SPRING_GREEN_CONCRETE_POWDER);
     }
